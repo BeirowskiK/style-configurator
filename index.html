@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Konfigurator</title>
+</head>
+<body>
+    <div id="container">
+        <div id="left-bar">
+            <h1>Konfigurator</h1>
+            <div id="change-color-box">
+                <h4>Zmień kolor tła:</h4>
+                <input class="change-color-btn" type="button" value="white">
+                <input class="change-color-btn" type="button" value="lightgreen">
+                <input class="change-color-btn" type="button" value="lightseagreen">
+            </div>
+            <div id="change-font-color-box">
+                <h4>Zmień kolor czcionki:</h4>
+                <select id="font-color">
+                    <option value="white">White</option>
+                    <option value="red">Red</option>
+                    <option selected value="black">Black</option>
+                </select>
+            </div>
+            <div id="change-font-size-box">
+                <h4>Podaj rozmiar czcionki w px</h4>
+                <input type="number" id="font-size" min="10">
+            </div>
+            <div id="change-list-style-box">
+                <h4>Określ styl listy:</h4>
+                <input type="radio" id="circle" name="list_type" value="Circle" checked>
+                <label for="circle">okrąg</label><br>
+                <input type="radio" id="square" name="list_type" value="Square">
+                <label for="square">kwadrat</label><br>
+                
+            </div>
+            <div id="underline-box">
+                <h4>Czy podkreślić nagłówek?</h4>
+                <input type="checkbox" id="underline">
+                <label for="underline">TAK</label><br>
+
+            </div>
+        </div>
+        <div id="right-bar">
+            <div id="top-bar">
+                <div id="photo-box">
+                    <img src="./photo.jpg">
+                </div>
+                <div id="list-box">
+                    <h2>Lista miejsc do odwiedzenia:</h2>
+                    <ul>
+                        <li>Kalifornia</li>
+                        <li>San Francisco</li>
+                        <li>Nowy Jork</li>
+                        <li>Rio de Janeiro</li>
+                    </ul>
+                </div>
+
+                
+            </div>
+            <div id="bottom-bar">
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                    It has survived not only five centuries, but also the leap into electronic typesetting, 
+                    remaining essentially unchanged. It was popularised in the 1960s with the release 
+                    of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                     publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="./skrypt.js"></script>
+</body>
+</html>
